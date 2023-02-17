@@ -1,0 +1,20 @@
+{
+  "name": "productly-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch productly/sass/style.scss productly/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/didrbll/productly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/didrbll/productly/issues"
+  },
+  "homepage": "https://github.com/didrbll/productly#readme"
+}

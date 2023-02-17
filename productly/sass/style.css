@@ -1,0 +1,139 @@
+.button {
+  font-family: "Open Sans", Verdana, sans-serif;
+  padding: 11px 25px 13px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.button_bordered {
+  background: #FFFFFF;
+  border: 1px solid #D7D7D7;
+  color: #173A56;
+}
+
+.button_colored {
+  background: #FF9900;
+  color: #FFFFFF;
+  border: 1px solid #FF9900;
+}
+
+.button_colored:hover {
+  background: #FF7549;
+  border-color: #FF7549;
+}
+
+.button_bordered:hover {
+  background: #BCD0E5;
+  border-color: #BCD0E5;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem; /*16px*/
+  font-family: "Open Sans", Verdana, sans-serif;
+}
+
+.promo__header {
+  font-family: "Poppins", Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+}
+
+.tools__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 46px;
+}
+
+.tool__header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.strategy__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+}
+
+.employee__header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.wrapper {
+  max-width: 1197px;
+  margin: 0 auto;
+}
+
+.header {
+  background: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 15px 0 17px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__buttons > .button {
+  margin-left: 14px;
+}
+
+.header__buttons > .button:first-child {
+  margin-left: 0;
+}
+
+.header__nav-items {
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.8rem;
+}
+
+.header__nav-item {
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+.contacts {
+  background: #FFEEE1;
+}
+
+.promo {
+  padding: 30px 0;
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__content {
+  padding-right: 65px;
+}
+
+.promo__buttons > * {
+  margin-right: 44px;
+}
+
+/*# sourceMappingURL=style.css.map */
