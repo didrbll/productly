@@ -3,6 +3,39 @@
   padding: 62px 82px;
 }
 
+.contacts__header{
+  margin: 0 0 17px;
+  color: $color-header;
+}
+
+.contacts__content{
+  max-width: 520px;
+}
+
+.contacts__desc{
+  margin: 0 0 33px;
+}
+
+.contacts__container{
+  margin: 0 0 19px;
+  display: flex;
+  align-items: center;
+  @include font(2.5rem, 2.6rem, 400);
+  &:last-child{
+    margin: 0 0 8px;
+  }
+  a{
+    margin-left: 11px;
+    color: $color-text;
+    text-decoration: none;
+  }
+  &:hover{
+    a{
+      text-decoration: underline;
+    }
+  }
+}
+
 .contacts__form{
   input, textarea{
     border: 1px solid $color-light; //чтобы при фокусе элементы не меняли размер

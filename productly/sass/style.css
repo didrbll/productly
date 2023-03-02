@@ -583,6 +583,18 @@ body {
   height: 17px;
 }
 
+.ico_phone {
+  background-image: url("/productly/img/ico_phone.svg");
+  width: 25px;
+  height: 25px;
+}
+
+.ico_mail {
+  background-image: url("/productly/img/ico_mail.svg");
+  width: 25px;
+  height: 25px;
+}
+
 .tags {
   display: flex;
 }
@@ -664,6 +676,40 @@ body {
 .contacts {
   background: #FFEEE1;
   padding: 62px 82px;
+}
+
+.contacts__header {
+  margin: 0 0 17px;
+  color: #2F281E;
+}
+
+.contacts__content {
+  max-width: 520px;
+}
+
+.contacts__desc {
+  margin: 0 0 33px;
+}
+
+.contacts__container {
+  margin: 0 0 19px;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  font-style: normal;
+}
+.contacts__container:last-child {
+  margin: 0 0 8px;
+}
+.contacts__container a {
+  margin-left: 11px;
+  color: #544837;
+  text-decoration: none;
+}
+.contacts__container:hover a {
+  text-decoration: underline;
 }
 
 .contacts__form input, .contacts__form textarea {
