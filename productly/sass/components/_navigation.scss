@@ -1,0 +1,16 @@
+.header__nav-items{
+  display: flex;
+  font-size: 1.5rem; //15px
+  line-height: 2.8rem; //28px
+}
+
+.header__nav-item{
+  list-style: none;
+  padding: 0 10px;
+  cursor: pointer;
+  color: $color-header;
+  @extend %transition;
+  &:hover {
+    color: $color-primary;
+  }
+}

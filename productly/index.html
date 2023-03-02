@@ -12,9 +12,8 @@
 <body>
 <header class="header"> <!--без подчеркиваний - блок-->
     <div class="wrapper header__wrapper">
-<!--        <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>-->
         <a href="#" class="logo">
-            <object data="./img/logo-svg.svg" type="image/svg+xml" width="200" class="svg-object">
+            <object data="./img/logo-svg.svg" type="image/svg+xml" class="logo-object">
                 Your browser does not support SVG
             </object>
         </a>
@@ -53,12 +52,12 @@
     </section>
 
     <section class="tools">
-        <div class="wrapper">
+        <div class="wrapper tools__wrapper">
             <h2 class="tools__header">We design tools to unveil your superpowers</h2>
             <div class="layout-4-column">
                 <div class="tool">
                     <div class="tool__icon">
-                        <span class="icon-square icon-square_lilium">
+                        <span class="icon-square icon-square_violet">
                             <span class="ico ico_arrow"></span>
                         </span>
                     </div>
@@ -110,45 +109,55 @@
                 <span class="tag tag_bordered">Culture</span>
                 <span class="tag tag_bordered">Design</span>
             </div>
-            <div class="layout-3-column">
+            <div class="layout-3-column strategy-wrapper">
                 <article class="strategy block-shadowed">
                     <img src="./img/strategy-card-1.jpg" alt="Strategy Image" class="strategy__image">
-                    <h3 class="strategy__header">Increasing Prosperity With Positive Thinking</h3>
-                    <div class="strategy__tags tags">
-                        <span class="tag tag_colored">Art</span>
-                        <span class="tag tag_colored">Design</span>
+                    <div class="strategy__content">
+                        <h3 class="strategy__header">Increasing Prosperity With Positive Thinking</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Art</span>
+                            <span class="tag tag_colored">Design</span>
+                        </div>
                     </div>
                 </article>
                 <article class="strategy block-shadowed">
                     <img src="./img/strategy-card-2.jpg" alt="Strategy Image" class="strategy__image">
-                    <h3 class="strategy__header">Motivation Is The First Step To Success</h3>
-                    <div class="strategy__tags tags">
-                        <span class="tag tag_colored">Culture</span>
+                    <div class="strategy__content">
+                        <h3 class="strategy__header">Motivation Is The First Step To Success</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Culture</span>
+                        </div>
                     </div>
                 </article>
                 <article class="strategy block-shadowed">
                     <img src="./img/strategy-card-3.jpg" alt="Strategy Image" class="strategy__image">
-                    <h3 class="strategy__header">Success Steps For Your Personal Or Business Life</h3>
-                    <div class="strategy__tags tags">
-                        <span class="tag tag_colored">Culture</span>
-                        <span class="tag tag_colored">Design</span>
-                        <span class="tag tag_colored">Art</span>
+                    <div class="strategy__content">
+                        <h3 class="strategy__header">Success Steps For Your Personal Or Business Life</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Culture</span>
+                            <span class="tag tag_colored">Design</span>
+                            <span class="tag tag_colored">Art</span>
+                        </div>
                     </div>
                 </article>
                 <article class="strategy block-shadowed">
                     <img src="./img/strategy-card-4.jpg" alt="Strategy Image" class="strategy__image">
-                    <h3 class="strategy__header">Success Steps For Your Personal Or Business Life Plus Funny Image on the Back</h3>
-                    <div class="strategy__tags tags">
-                        <span class="tag tag_colored">Culture</span>
-                        <span class="tag tag_colored">Design</span>
-                        <span class="tag tag_colored">Art</span>
+                    <div class="strategy__content">
+                        <h3 class="strategy__header">Success Steps For Your Personal Or Business Life Plus Funny Image on the Back</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Culture</span>
+                            <span class="tag tag_colored">Design</span>
+                            <span class="tag tag_colored">Art</span>
+                        </div>
                     </div>
                 </article>
                 <article class="strategy block-shadowed">
                     <img src="./img/strategy-card-5.jpg" alt="Strategy Image" class="strategy__image">
-                    <h3 class="strategy__header">Increasing Prosperity With Positive Thinking</h3>
-                    <div class="strategy__tags tags">
-                        <span class="tag tag_colored">Design</span>
+                    <div class="strategy__content">
+                        <h3 class="strategy__header">Increasing Prosperity With Positive Thinking</h3>
+                        <div class="strategy__tags tags">
+                            <span class="tag tag_colored">Design</span>
+                        </div>
                     </div>
                 </article>
             </div>
@@ -196,7 +205,7 @@
         <div class="wrapper">
             <h2 class="contacts__header">Contact Us</h2>
             <div class="layout-2-column">
-                <p class="contacts__content">
+                <div class="contacts__content">
                     <p class="contacts__desc">Your About Us page is vital. It’s often the first stop in any user’s
                         journey through a website or blog. It also shouldn’t be their last, because first impressions
                         count online just as much as they do in the real world. If your visitors aren’t impressed, you
@@ -211,12 +220,12 @@
                 </div>
                 <div class="contacts__form">
                     <form action method="post" class="contacts__form-inputs">
-                        <div class="layout-2-column">
+                        <div class="layout-2-column contacts__line">
                             <input type="text" name="name" placeholder="Your name">
                             <input type="email" name="email" placeholder="Your email">
                         </div>
-                        <textarea name="question" placeholder="What do you want to ask?"></textarea>
-                        <div class="contacts__button-container">
+                        <textarea name="question" placeholder="What do you want to ask?" class="contacts__line"></textarea>
+                        <div class="contacts__button">
                             <button type="submit" class="button button_colored">Send</button>
                         </div>
                     </form>

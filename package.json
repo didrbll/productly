@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/didrbll/productly/issues"
   },
-  "homepage": "https://github.com/didrbll/productly#readme"
+  "homepage": "https://github.com/didrbll/productly#readme",
+  "dependencies": {
+    "normalize-scss": "^7.0.1"
+  }
 }

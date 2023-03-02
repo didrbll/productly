@@ -1,5 +1,5 @@
 .button{
-  font-family: 'Open Sans', Verdana, sans-serif;;
+  @extend %font-primary;
   padding: 11px 25px 13px;
   font-style: normal;
   font-weight: 600;
@@ -8,26 +8,34 @@
   border-radius: 4px;
   cursor: pointer;
   transition: all .5s;
+  &_bordered{ //аналогично .button_bordered{}
+    background: $color-light;
+    border: 1px solid $color-border;
+    color: $color-button-bordered;
+    &:hover{ //вместо & подставляется родительский элемент
+      background: $color-hovered;
+      border-color: $color-hovered;
+    }
+  }
+  &_colored{
+    background: $color-primary;
+    color: $color-light;
+    border: 1px solid $color-primary;
+    &:hover{
+      background: $color-additional;
+      border-color: $color-additional;
+    }
+  }
 }
 
-.button_bordered{
-  background: $color-light;
-  border: 1px solid $color-border;
-  color: $color-button-bordered;
+.link-button{
+  color: $color-primary;
+  @extend %font-add;
+  @include font(1.6rem, 2.4rem, 600);
+  display: inline-flex;
+  align-items: center;
 }
 
-.button_colored{
-  background: $color-primary;
-  color: $color-light;
-  border: 1px solid $color-primary;
-}
-
-.button_colored:hover{
-  background: $color-additional;
-  border-color: $color-additional;
-}
-
-.button_bordered:hover{
-  background: $color-hovered;
-  border-color: $color-hovered;
+.link-button__text{
+  margin-left: 9px;
 }

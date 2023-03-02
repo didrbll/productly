@@ -1,5 +1,5 @@
 .promo{
-  padding: 30px 0;
+  padding: 30px 0 111px;
 }
 
 .promo__wrapper{
@@ -10,6 +10,19 @@
 
 .promo__content{
   padding-right: 65px;
+}
+
+.promo__header{
+  margin: 0 0 30px;
+  color: $color-header;
+}
+
+.promo__text{
+  max-width: 487px;
+  margin: 0 0 45px;
+  @extend %font-add;
+  @include font(1.8rem, 2.8rem, 400);
+  color: $color-text;
 }
 
 .promo__buttons>*{
