@@ -26,7 +26,11 @@ body{
 }
 
 .strategy__header{
-  @include font(2.4rem, 3.4rem)
+  @include font(2.4rem, 3.4rem);
+}
+
+.about__header{
+  @include font(3.4rem, 4.6rem);
 }
 
 .employee__header{
@@ -34,10 +38,14 @@ body{
 }
 
 .contacts__header{
-  @include font(3.4rem, 4.6rem)
+  @include font(3.4rem, 4.6rem);
 }
 
 .block-shadowed{
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
+}
+
+.footer__header{
+  @include font(2.0rem, 3.0rem, 600);
 }

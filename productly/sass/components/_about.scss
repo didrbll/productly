@@ -1,0 +1,57 @@
+$image-gap: 32px; //локальная переменная
+
+.about{
+  padding: 30px 0 100px;
+}
+
+.about__header{
+  margin: 0 0 14px;
+  color: $color-header;
+}
+
+.about__desc{
+  margin: 0 0 45px;
+}
+
+.employee-container{
+  padding-right: $image-gap; //уменьшим ширину блоков на размер отступа картинки
+}
+
+.employee{
+  display: flex;
+  padding: 35px;
+  position: relative;
+  width: calc(30% - $image-gap); //уменьшим ширину блоков на размер отступа картинки
+}
+
+.employee__header{
+  margin: 0;
+  color: $color-header;
+}
+
+.employee__title{
+  margin: 0;
+  @include font(1.4rem, 2.6rem, 400);
+}
+
+.employee__link{
+  @include font(1.4rem, 2.6rem, 400);
+  color: $color-link;
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.employee__pic{
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px; //удаляемся сверху вниз
+  right: -$image-gap; //удаляемся от правого края вправо
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+

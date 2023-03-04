@@ -172,7 +172,7 @@
                 as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without
                 reading your awesome content or completing a conversion action (e.g., signing up for your newsletter,
                 making a purchase).</p>
-            <div class="layout-3-column">
+            <div class="layout-3-column employee-container">
                 <div class="employee block-shadowed">
                     <div class="employee__content">
                         <h5 class="employee__header">Kathy Rosenberg</h5>
@@ -221,10 +221,16 @@
                 <div class="contacts__form">
                     <form action method="post" class="contacts__form-inputs">
                         <div class="layout-2-column contacts__line">
-                            <input type="text" name="name" placeholder="Your name">
-                            <input type="email" name="email" placeholder="Your email">
+                            <label>
+                                <input type="text" name="name" placeholder="Your name">
+                            </label>
+                            <label>
+                                <input type="email" name="email" placeholder="Your email">
+                            </label>
                         </div>
-                        <textarea name="question" placeholder="What do you want to ask?" class="contacts__line"></textarea>
+                        <label>
+                            <textarea name="question" placeholder="What do you want to ask?" class="contacts__line"></textarea>
+                        </label>
                         <div class="contacts__button">
                             <button type="submit" class="button button_colored">Send</button>
                         </div>
@@ -235,8 +241,12 @@
     </section>
 
     <footer class="footer">
-        <div class="wrapper">
-            <a href="#" class="logo"><img src="./img/logo.png" alt="Productly LCC"></a>
+        <div class="wrapper footer__wrapper">
+            <a href="#" class="logo">
+                <object data="./img/logo-svg.svg" type="image/svg+xml" class="logo-object">
+                    Your browser does not support SVG
+                </object>
+            </a>
             <div class="footer__nav layout-3-column">
                 <div class="footer__nav-column">
                     <h4 class="footer__header">Quick Links</h4>
