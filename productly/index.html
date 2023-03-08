@@ -12,11 +12,16 @@
 <body>
 <header class="header"> <!--без подчеркиваний - блок-->
     <div class="wrapper header__wrapper">
-        <a href="#" class="logo">
-            <object data="./img/logo-svg.svg" type="image/svg+xml" class="logo-object">
-                Your browser does not support SVG
-            </object>
-        </a>
+        <div class="header__logo-line">
+            <span class="burger">
+                <span class="burger__line"></span>
+            </span>
+            <a href="#" class="logo">
+                <object data="./img/logo-svg.svg" type="image/svg+xml" class="logo-object">
+                    Your browser does not support SVG
+                </object>
+            </a>
+        </div>
         <nav class="header__nav"> <!--2 подчеркивания - элемент блока-->
             <ul class="header__nav-items">
                 <li class="header__nav-item">Home</li>
@@ -54,7 +59,7 @@
     <section class="tools">
         <div class="wrapper tools__wrapper">
             <h2 class="tools__header">We design tools to unveil your superpowers</h2>
-            <div class="layout-4-column">
+            <div class="layout-4-column tool-container">
                 <div class="tool">
                     <div class="tool__icon">
                         <span class="icon-square icon-square_violet">
@@ -204,7 +209,7 @@
     <section class="contacts">
         <div class="wrapper">
             <h2 class="contacts__header">Contact Us</h2>
-            <div class="layout-2-column">
+            <div class="layout-2-column contact-us-container">
                 <div class="contacts__content">
                     <p class="contacts__desc">Your About Us page is vital. It’s often the first stop in any user’s
                         journey through a website or blog. It also shouldn’t be their last, because first impressions

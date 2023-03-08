@@ -11,22 +11,37 @@ body{
 .promo__header{
   @extend %font-add;
   @include font(4.4rem, 5.4rem);
+  @include media-mobile{
+    @include font(3.2rem, 4.2rem);
+  }
 }
 
 .tools__header{
   @include font(3.4rem, 4.6rem);
+  @include media-mobile{
+    @include font(2.4rem, 3.2rem);
+  }
 }
 
 .tool__header{
   @include font(2.2rem, 3.0rem, 600);
+  @include media-mobile{
+    @include font(2.0rem, 2.7rem, 600);
+  }
 }
 
 .strategies__header{
   @include font(3.4rem, 4.6rem);
+  @include media-mobile{
+    @include font(2.4rem, 3.2rem);
+  }
 }
 
 .strategy__header{
   @include font(2.4rem, 3.4rem);
+  @include media-mobile{
+    @include font(2.1rem, 3.1rem);
+  }
 }
 
 .about__header{
@@ -39,6 +54,9 @@ body{
 
 .contacts__header{
   @include font(3.4rem, 4.6rem);
+  @include media-mobile{
+    @include font(2.4rem, 3.2rem);
+  }
 }
 
 .block-shadowed{
@@ -48,4 +66,7 @@ body{
 
 .footer__header{
   @include font(2.0rem, 3.0rem, 600);
+  @include media-mobile{
+    @include font(1.8rem, 3.0rem, 600);
+  }
 }

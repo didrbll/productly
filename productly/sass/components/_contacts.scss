@@ -1,19 +1,44 @@
 .contacts{
   background: $color-background;
-  padding: 62px 82px;
+  padding: 62px 0;
+  @include media-tablet{
+    text-align: center;
+    padding: 50px 0;
+  }
+  @include media-mobile{
+    padding: 34px 0 49px;
+  }
+}
+
+.contact-us-container{
+  @include media-tablet{
+    flex-direction: column;
+  }
 }
 
 .contacts__header{
   margin: 0 0 17px;
   color: $color-header;
+  @include media-mobile{
+    margin: 0 0 8px;
+  }
 }
 
 .contacts__content{
   max-width: 520px;
+  @include media-tablet{
+    max-width: 100%;
+  }
+  @include media-mobile{
+    max-width: 100%;
+  }
 }
 
 .contacts__desc{
   margin: 0 0 33px;
+  @include media-tablet{
+    margin: 0 0 26px;
+  }
 }
 
 .contacts__container{
@@ -23,6 +48,18 @@
   @include font(2.5rem, 2.6rem, 400);
   &:last-child{
     margin: 0 0 8px;
+  }
+  @include media-tablet{
+    justify-content: center;
+    &:last-child{
+      margin: 0 0 52px;
+    }
+  }
+  @include media-mobile{
+    @include font(2.0rem, 2.6rem, 400);
+    &:last-child{
+      margin: 0 0 43px;
+    }
   }
 }
 
@@ -45,6 +82,9 @@
       border-color: $color-primary;
       outline: none;
     }
+    @include media-tablet{
+        width: 100%;
+    }
   }
 
   textarea{
@@ -56,10 +96,25 @@
 
 .contacts__line{
   margin-bottom: 19px;
+  @include media-mobile{
+    flex-direction: column;
+    margin-bottom: 0;
+    >*{
+      margin-bottom: 16px;
+    }
+  }
 }
 
 .contacts__button{
   >*{ //прямой потомок контейнера - сама кнопка
     min-width: 117px;
+    @include media-tablet{
+      padding: 16px 25px;
+    }
+    @include media-mobile{
+      min-width: 174px;
+      margin-top: 22px;
+      padding: 16px 25px;
+    }
   }
 }
